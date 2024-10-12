@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script>
+        function toggleLoginPage() {
+            var loginSection = document.getElementById("login");
+            if (loginSection.style.display === "none" || loginSection.style.display === "") {
+                loginSection.style.display = "block";
+            } else {
+                loginSection.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <section class="header" id="header">
+       
+        <nav>
+        <a href="#header"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-square-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="#Artwork">ART WORKS</a></li>
+                <li><a href="#auction-page">AUCTIONS</a></li>
+                <li><a href="#artist">ARTISTS</a></li>
+                <li><a href="#About-us">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+       </nav>
+
+     <div class="text-box">
+        <h1>The online House of Art</h1>
+        <p>This website will serve as online cross - communication of Artists and Art Buyers</p>
+        <a href="" class="hero-btn">Visit our Facebook Page to know more</a>
+
+     </div>  
+    </section>
+
+    <div id="login-container"></div>
+
+    
+    <!-----ARTWORKS----->
+    <section class="Artwork" id="Artwork">
+        
+        <h1>Artworks that we offer</h1>
+        <p>Discover a captivating array of paintings, sculptures, and pottery, each crafted by talented artists from around the world, in our diverse and inspiring gallery collection.</p>
+        
+        <div class="row">
+            <div class="art-col">
+                <h3>Paintings</h3>
+                <p>Immerse yourself in a vibrant world of color and emotion with our curated selection of paintings, each bearing the unique style and vision of talented artists. </p>
+        </div>
+        
+        <div class="art-col">
+            <h3>Sculptures</h3>
+            <p>Experience the power of form and texture with our captivating sculptures, crafted by skilled hands to evoke a sense of wonder and awe. </p>
+        
+        </div>
+        
+        <div class="art-col">
+            <h3>Pottery</h3>
+            <p>Indulge in the tactile beauty of our pottery collection, where each piece reflects the artistry and craftsmanship of its creator, inviting you to explore texture and design. </p>
+        </div>
+        
+        </div>
+
+    </section>
+
+    <!-----Artworks------>
+    <section class="ArtPic">
+        <h1>Artworks</h1>
+        <p>Explore our collection of captivating artworks, each telling a unique story through color, texture, and emotion. From mesmerizing landscapes to thought-provoking abstracts, our gallery offers a diverse range of pieces to ignite your imagination and elevate your space. Whether you're a seasoned collector or an art enthusiast, discover the perfect masterpiece to adorn your walls and inspire your soul.</p>
+        
+        <div class="row"> 
+            <div class="artpic-col">
+                <img src="images/painting.jpg">
+                <div class="layer"> 
+                    <h3>Painting</h3>
+                </div>
+            </div>
+            <div class="artpic-col">
+                <img src="images/sculpture.jpg">
+                <div class="layer">
+                    <h3>Sculpture</h3>
+                </div>
+            </div>
+            
+            <div class="artpic-col">
+                <img src="images/pottery.jpg">
+                <div class="layer">
+                    <h3>Pottery</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-----Auction------>
+    <section class="auction-page" id="auction-page">
+        <h1 class="heading">Art <span>Auction</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/auction1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa-solid fa-heart"></a>
+                        <a href="#" class="bid-btn">Bid Now</a>
+                        <a href="#" class="fa-solid fa-cart-shopping"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>In midst of Green</h3>
+                    <h4>Painting (Landscape)</h4>
+                    <div class="curBId">Current Bid: <span>₱27,000</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/auction2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa-solid fa-heart"></a>
+                        <a href="#" class="bid-btn">Bid Now</a>
+                        <a href="#" class="fa-solid fa-cart-shopping"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Taming the rain</h3>
+                    <h4>Painting </h4>
+                    <div class="curBId">Current Bid: <span>₱27,000</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/auction3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa-solid fa-heart"></a>
+                        <a href="#" class="bid-btn">Bid Now</a>
+                        <a href="#" class="fa-solid fa-cart-shopping"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Koi fish </h3>
+                    <h4>Pottery</h4>
+                    <div class="curBId">Current Bid: <span>₱27,000</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/auction4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fa-solid fa-heart"></a>
+                        <a href="#" class="bid-btn">Bid Now</a>
+                        <a href="#" class="fa-solid fa-cart-shopping"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Sundered by time</h3>
+                    <h4>Sculpture</h4>
+                    <div class="curBId">Current Bid: <span>₱27,000</span></div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-----ARTISTS------>
+
+    <section class="artist" id="artist"> 
+        <div class="container">
+            <div class="row2">
+                <div class="column">
+                    <h1>The Artists</h1>
+                    <p>Agnes Arellano, Benedicto Cabrera (BenCab), Tessy Pettyjohn, and Annie Cabigting are among the many talented artists who express themselves through various mediums such as painting, sculpture, music, literature, and more. Through their unique abilities, they capture emotions, thoughts, and experiences, offering viewers new perspectives and insights into the world around them. Their creations challenge, inspire, and evoke a range of emotions, contributing to the rich tapestry of human culture and imagination. </p>
+                </div>
+                <div class="col">
+                    <div class="card card1">
+                        <h5>Agnes Arellano</h5>
+                        
+                    </div>
+
+                    <div class="card card2">
+                        <h5>Benedicto Cabrera</h5>
+                        
+                    </div>
+
+                    <div class="card card3">
+                        <h5>Tessy Pettyjohn</h5>
+                        
+                    </div>
+
+                    <div class="card card4">
+                        <h5>Annie Cabigting</h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+        <!-----ABOUT US------->
+    <section class="about-us" id="About-us">
+        <div class="wrapper">
+            <div class="testimonial">
+                <article>
+                    <h1>ABOUT US</h1>
+                    <img src="images/logo1.png" alt="Art House Logo">
+                    <h5>Art House</h5>
+                    <blockquote>
+                        "Art House is a unique space that combines living with artistic expression. This residence showcases a captivating blend of paintings, pottery, and sculptures, creating a sanctuary for creativity within our community. Artists and enthusiasts gather here to share their passion, making art an integral part of everyday life. Art House Company invites you to immerse yourself in a world where creativity thrives and beauty is celebrated. Please note that this website is for educational purposes only."
+                    </blockquote>
+                    <p>"An artist is not paid for his labor but for his vision." - James McNeill Whistler</p>
+                </article>
+            </div>
+    
+            <div class="container">
+                
+                <div class="panel">
+                    <img src="images/abando.jpg" alt="ANGEL ANN ABANDO">
+                    <h2>Angel Ann Abando</h2>
+                    <p>Email: abando.angelann.gammaru@gmail.com</p>
+                </div>
+                <div class="panel">
+                    <img src="images/amamangpang.jpg" alt="JAMES AMAMANGPANG">
+                    <h2>James Amamangpang</h2>
+                    <p>Email: amamangpang.james.duenas@gmail.com</p>
+                </div>
+                <div class="panel">
+                    <img src="images/balicat.jpg" alt="CHRISTINE JOMELLE BALICAT">
+                    <h2>Christine Jomelle Balicat</h2>
+                    <p>Email: balicat.christinejomelle@gmail.com</p>
+                </div>
+                <div class="panel">
+                    <img src="images/bautista.jpg" alt="WINSTON BAUTISTA">
+                    <h2>Winston Bautista</h2>
+                    <p>Email:winstonbautista29@gmail.com</p>
+                </div>
+                <div class="panel">
+                    <img src="images/cadiz.jpg" alt="WILMHAR KIEN CADIZ">
+                    <h2>Wilmhar Kien Cadiz</h2>
+                    <p>Email: cadiz.wilmharkien.lampaan@gmail.com</p>
+                </div>
+                <div class="panel">
+                    <img src="images/delacruz.jpg" alt="REYNALYN MAE DELA CRUZ">
+                    <h2>Jane Smith</h2>
+                    <p>Email: delacruz.reynalynmae.garcia@gmail.com</p>
+                </div>
+                <div class="panel">
+                    <img src="images/jose.jpg" alt="ROMMEL JOSE">
+                    <h2>Rommel Jose</h2>
+                    <p>Email: joserommelo09@gmail.com</p>
+                </div>
+                <div class="panel">
+                    <img src="images/ljmancilla.png" alt="LJ CHRISTA MANCILLA">
+                    <h2>LJ Christa Mancilla</h2>
+                    <p>Email: mancillaljchristasagun@gmail.com</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-----JavaScript------>
+
+   =<script src="script.js"></script>
+</body>
+</html>
